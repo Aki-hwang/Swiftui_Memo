@@ -10,12 +10,12 @@ import SwiftUI
 class Memo : Identifiable, ObservableObject {
     let id: UUID //identifiable
     @Published var content: String
-    let insertData : Data
+    let insertDate : Date
     
-    init(id: UUID = UUID(), content: String, insertData: Data = Data()){
+    init(id: UUID = UUID(), content: String, insertDate: Date = Date()){
         self.id = id
         self.content = content
-        self.insertData = insertData
+        self.insertDate = insertDate
     }
 }
 
