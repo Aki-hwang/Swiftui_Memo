@@ -10,6 +10,7 @@ import SwiftUI
 struct MemoListScene: View {
     @EnvironmentObject var store: MemoStore //형식에 맞게 제공
     @EnvironmentObject var formatter: DateFormatter
+    
     @State var showComposer: Bool = false
     
     var body: some View {
@@ -21,6 +22,7 @@ struct MemoListScene: View {
             .navigationBarItems(trailing: ModalButton(show: $showComposer)) //$붙이면 바인딩이 전달된다
             .sheet(isPresented: $showComposer, content: {
                 ComposeScene(showComposer: self.$showComposer)
+                    
 //                    .environmentObject(self.store)
             }) //$showCompser 값이 True면 ComposeScene()가 실형된다
         }
@@ -41,6 +43,7 @@ struct MemoListScene_Previews: PreviewProvider {
         MemoListScene()
             .environmentObject(MemoStore())
             .environmentObject(DateFormatter.memoDateFormatter) //simulation을 위해 app으로 전달 필요
+            
         
     }
 }

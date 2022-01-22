@@ -13,6 +13,7 @@ struct SwiftUIMemoApp: App {
             MemoListScene()
                 .environmentObject(MemoStore())
                 .environmentObject(DateFormatter.memoDateFormatter)
+                .environmentObject(KeyboardObserver())
            
         }
     }

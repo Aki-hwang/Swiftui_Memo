@@ -20,6 +20,7 @@
 		F0EC6AD3279BC800007385FD /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC6AD2279BC800007385FD /* MemoCell.swift */; };
 		F0EC6AD7279BC8F8007385FD /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC6AD6279BC8F8007385FD /* ComposeScene.swift */; };
 		F0F7976A279BDEA000042111 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F79769279BDEA000042111 /* TextView.swift */; };
+		F0F7976D279BE03100042111 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7976C279BE03100042111 /* KeyboardObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F0EC6AD2279BC800007385FD /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		F0EC6AD6279BC8F8007385FD /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
 		F0F79769279BDEA000042111 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		F0F7976C279BE03100042111 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		F0EC6A28279BA571007385FD /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				F0F7976B279BE01000042111 /* Shared */,
 				F0EC6AD5279BC8B9007385FD /* Scene */,
 				F0EC6AD1279BC7E3007385FD /* View */,
 				F0EC6ACE279BC517007385FD /* Extension */,
@@ -175,6 +178,14 @@
 				F0EC6AD6279BC8F8007385FD /* ComposeScene.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		F0F7976B279BE01000042111 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F0F7976C279BE03100042111 /* KeyboardObserver.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0EC6A90279BAB73007385FD /* Memo.swift in Sources */,
+				F0F7976D279BE03100042111 /* KeyboardObserver.swift in Sources */,
 				F0F7976A279BDEA000042111 /* TextView.swift in Sources */,
 				F0EC6A92279BAC8B007385FD /* MemoStore.swift in Sources */,
 				F0EC6A2C279BA571007385FD /* ContentView.swift in Sources */,

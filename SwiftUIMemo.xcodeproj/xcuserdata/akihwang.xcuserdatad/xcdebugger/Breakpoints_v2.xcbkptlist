@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D8F2369A-F631-412B-9425-BAB4D892B964"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9754EC3E-82A8-4852-83BE-8E94AE304037"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIMemo/Scene/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "MemoListScene"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "9754EC3E-82A8-4852-83BE-8E94AE304037 - 5e193f8c08d8cffd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIMemo.MemoListScene.formatter.getter : __C.NSDateFormatter"
+                  moduleName = "SwiftUIMemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akihwang/Documents/GitHub/SwiftUIMemo/SwiftUIMemo/Scene/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "9754EC3E-82A8-4852-83BE-8E94AE304037 - 1364ade57ecfb249"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIMemo.MemoListScene.$formatter.getter : SwiftUI.EnvironmentObject&lt;__C.NSDateFormatter&gt;.Wrapper"
+                  moduleName = "SwiftUIMemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akihwang/Documents/GitHub/SwiftUIMemo/SwiftUIMemo/Scene/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "9754EC3E-82A8-4852-83BE-8E94AE304037 - 43270f3270af6b08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIMemo.MemoListScene.init() -&gt; SwiftUIMemo.MemoListScene"
+                  moduleName = "SwiftUIMemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akihwang/Documents/GitHub/SwiftUIMemo/SwiftUIMemo/Scene/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
