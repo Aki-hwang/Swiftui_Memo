@@ -16,10 +16,16 @@ struct MemoListScene: View {
     var body: some View {
         NavigationView {
             List(store.list){ memo in
-                MemoCell(memo: memo)
+                //상세화면은 슬라이드 푸쉬로 표시 >> 네비게이션 링크를 사용
+                NavigationLink(destination: DetailScene(memo:memo), label: {
+                    MemoCell(memo: memo)
+                })
+                
             }
             .navigationBarTitle("내 메모")
             .navigationBarItems(trailing: ModalButton(show: $showComposer)) //$붙이면 바인딩이 전달된다
+           
+            
             .sheet(isPresented: $showComposer, content: {
                 ComposeScene(showComposer: self.$showComposer)
                     

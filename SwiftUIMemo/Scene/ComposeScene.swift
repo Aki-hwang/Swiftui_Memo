@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ComposeScene: View {
     @EnvironmentObject var store: MemoStore
-    @EnvironmentObject var keybord: KeyboardObserver
+//    @EnvironmentObject var keybord: KeyboardObserver
     @State private var content: String = ""
     @Binding var showComposer : Bool
     
@@ -18,10 +18,9 @@ struct ComposeScene: View {
             VStack {
                 TextView(text:$content) // content랑 textfield가 묶인거래. 텍스트 필드가 중간에 들어가거든 반드시 기억
                     .frame(maxWidth: . infinity, maxHeight: .infinity) //
-                    .padding(.bottom, keybord.context.height)
-                    .animation(.easeInOut(duration: keybord.context.animationDuration))
-                    .background(Color.yellow)
-
+//                    .padding(.bottom, keybord.context.height)
+//                    .animation(.easeInOut(duration: keybord.context.animationDuration)) 버전 업으로 인해 키보드 필요 없어
+//                    .background(Color.yellow)
             }
             .frame(maxWidth: . infinity, maxHeight: .infinity) //가장 크게 설정
             .navigationBarTitle("새 메모", displayMode: .inline)
@@ -58,6 +57,6 @@ struct ComposeScene_Previews: PreviewProvider {
     static var previews: some View {
         ComposeScene(showComposer: .constant(false)) //showComposer 값이 없으므로 Constant값 전달
             .environmentObject(MemoStore())
-            .environmentObject(KeyboardObserver())
+//            .environmentObject(KeyboardObserver())
     }
 }
