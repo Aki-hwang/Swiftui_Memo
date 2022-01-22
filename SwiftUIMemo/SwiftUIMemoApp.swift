@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
 @main
 struct SwiftUIMemoApp: App {
     var body: some Scene {
         WindowGroup {
             MemoListScene()
+           
         }
     }
 }
