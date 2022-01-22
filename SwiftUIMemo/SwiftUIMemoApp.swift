@@ -11,6 +11,8 @@ struct SwiftUIMemoApp: App {
     var body: some Scene {
         WindowGroup {
             MemoListScene()
+                .environmentObject(MemoStore())
+                .environmentObject(DateFormatter.memoDateFormatter)
            
         }
     }
