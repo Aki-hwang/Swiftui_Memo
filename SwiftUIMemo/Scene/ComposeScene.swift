@@ -58,7 +58,7 @@ fileprivate struct SaveButton: View{
         Button(action: {
             if let memo = self.memo {
                 
-                self.store.updata(memo:memo, content: self.content) // 여기서 왜 updata로 하면 되는지 모르겠어 ㅠㅜ
+                self.store.update(memo:memo, content: self.content) // 여기서 왜 updata로 하면 되는지 모르겠어 ㅠㅜ
             }else{
                 self.store.inset(memo: self.content)
             }
