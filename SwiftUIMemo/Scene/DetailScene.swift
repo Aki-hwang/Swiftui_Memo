@@ -9,9 +9,10 @@ import SwiftUI
 
 struct DetailScene: View {
     @ObservedObject var memo: Memo
-    
     @EnvironmentObject var store: MemoStore
     @EnvironmentObject var formatter: DateFormatter
+    @State private var showEditSheet = false
+    
     var body: some View {
         VStack{
             ScrollView{
@@ -26,6 +27,18 @@ struct DetailScene: View {
                         .font(.footnote)
                         .foregroundColor(Color(UIColor.secondaryLabel))
                 }
+            }
+            HStack{
+                Button(action: {
+                    self.showEditSheet.toggle()
+                }, label: {
+                        Image(systemName: "square.and.pencil")
+                })
+                    .padding()
+                    .sheet(isPresented: $showEditSheet, content:{
+                        ComposeScene(showComposer: self.$showEditSheet, memo:self.memo)
+                            .environmentObject(self.store) //커스텀 공유 데이터로 등록
+                    })
             }
         }// vstack 끝
         .navigationBarTitle("메모보기")
