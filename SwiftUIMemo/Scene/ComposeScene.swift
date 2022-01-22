@@ -15,7 +15,8 @@ struct ComposeScene: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("", text: $content) // content랑 textfield가 묶인거래. 텍스트 필드가 중간에 들어가거든 반드시 기억
+                TextView(text:$content) // content랑 textfield가 묶인거래. 텍스트 필드가 중간에 들어가거든 반드시 기억
+                    .frame(maxWidth: . infinity, maxHeight: .infinity) //
                     .background(Color.yellow)
 
             }

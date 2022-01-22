@@ -19,6 +19,7 @@
 		F0EC6AD0279BC536007385FD /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC6ACF279BC536007385FD /* DateFormatter+Memo.swift */; };
 		F0EC6AD3279BC800007385FD /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC6AD2279BC800007385FD /* MemoCell.swift */; };
 		F0EC6AD7279BC8F8007385FD /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC6AD6279BC8F8007385FD /* ComposeScene.swift */; };
+		F0F7976A279BDEA000042111 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F79769279BDEA000042111 /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F0EC6ACF279BC536007385FD /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
 		F0EC6AD2279BC800007385FD /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		F0EC6AD6279BC8F8007385FD /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
+		F0F79769279BDEA000042111 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				F0EC6AD2279BC800007385FD /* MemoCell.swift */,
+				F0F79769279BDEA000042111 /* TextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0EC6A90279BAB73007385FD /* Memo.swift in Sources */,
+				F0F7976A279BDEA000042111 /* TextView.swift in Sources */,
 				F0EC6A92279BAC8B007385FD /* MemoStore.swift in Sources */,
 				F0EC6A2C279BA571007385FD /* ContentView.swift in Sources */,
 				F0EC6A2A279BA571007385FD /* SwiftUIMemoApp.swift in Sources */,
